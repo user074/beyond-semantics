@@ -8,8 +8,8 @@ The checkpoints are stored in the `checkpoints` directory.
 beyond-semantics
 ├── checkpoints
 │   ├── llava-v1.5-7b
-│   ├── llava-v1.5-7b-normWmean
-│   └── llava-v1.5-7b-multilayerNorm
+│   ├── llava-v1.5-7b-normWmean (It is the +Normalize model)
+│   └── llava-v1.5-7b-multilayerNorm (It is the +Normalize + Multilayer model)
 ```
 
 Otherwise you can directly use our colab notebook to go through all the steps: 
