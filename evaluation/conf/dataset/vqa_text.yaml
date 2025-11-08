@@ -1,0 +1,16 @@
+name: eval_vqa_text.Eval_VQA_Vicuna
+params:
+  model:
+    base: null
+    path: model/vicuna-7b-v1.5
+    name: vicuna-7b-v1.5
+
+  data:
+    directory: Data
+    image_folder: Data/vqav2/test2015
+    question_file: evaluation/data/llava_vqav2_mscoco_test2015.jsonl # llava_vqav2_mscoco_test2015.jsonl
+    test_split_file: evaluation/data/llava_vqav2_mscoco_test2015.jsonl  # Added this field
+
+  results:
+    directory: answers/vqav2_text
+    unique_id: default

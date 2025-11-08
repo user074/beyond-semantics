@@ -1,0 +1,17 @@
+name: eval_pope_text.Eval_Pope_Vicuna
+params:
+  model:
+    base: null
+    path: model/vicuna-7b-v1.5
+    name: vicuna-7b-v1.5
+
+  data:
+    directory: Data/coco # location of dataset
+    question_file: evaluation/data
+
+  results:
+    directory: answers/pope_text  
+    unique_id: default
+  
+  strategy: popular # There are three strategies: random, popular, adversarial
+

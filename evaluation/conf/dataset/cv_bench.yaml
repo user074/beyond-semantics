@@ -1,0 +1,14 @@
+name: eval_cv_bench.Eval_CV_Bench
+params:
+  model:
+    base: null
+    path: model/llava-v1.5-7b
+    name: llava-v1.5-7b
+
+  data:
+    directory: Data/CV-Bench
+    question_file: test.jsonl
+
+  results:
+    directory: answers/cv_bench
+    unique_id: default

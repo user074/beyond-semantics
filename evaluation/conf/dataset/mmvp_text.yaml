@@ -1,0 +1,14 @@
+name: eval_mmvp_text.Eval_MMVP_Vicuna
+params:
+  model:
+    base: null
+    path: model/vicuna-7b-v1.5
+    name: vicuna-7b-v1.5
+
+  data:
+    directory: Data
+    questions_directory: evaluation/data
+
+  results:
+    directory: answers/mmvp_text
+    unique_id: default

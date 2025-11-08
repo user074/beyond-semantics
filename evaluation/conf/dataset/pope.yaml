@@ -1,0 +1,17 @@
+name: eval_pope.Eval_Pope
+params:
+  model:
+    base: null
+    path: model/llava-v1.5-7b
+    name: llava-v1.5-7b
+
+  data:
+    directory: Data/coco # location of dataset
+    question_file: evaluation/data
+
+  results:
+    directory: answers/pope  
+    unique_id: default
+  
+  strategy: popular # There are three strategies: random, popular, adversarial
+

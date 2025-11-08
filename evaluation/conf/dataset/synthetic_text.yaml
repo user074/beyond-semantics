@@ -1,0 +1,14 @@
+name: eval_synthetic_text.EvalSynthetic_Vicuna
+params:
+  model:
+    base: null
+    path: model/vicuna-7b-v1.5
+    name: vicuna-7b-v1.5
+
+  data:
+    directory: Data/simple-synthetic-dataset/data
+    file_path: train-00000-of-00001.parquet
+
+  results:
+    directory: answers/synthetic_text
+    unique_id: default

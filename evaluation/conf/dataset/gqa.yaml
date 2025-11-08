@@ -1,0 +1,14 @@
+name: eval_gqa.Eval_GQA
+params:
+  model:
+    base: null
+    path: model/llava-v1.5-7b
+    name: llava-v1.5-7b
+
+  data:
+    directory: Data
+    questions_directory: evaluation/data
+
+  results:
+    directory: answers/gqa
+    unique_id: default

@@ -1,0 +1,15 @@
+name: grader_cv_bench.Grader_CV_Bench
+params:
+  model:
+    name: llava-v1.5-7b
+
+  results:
+    directory: answers/cv_bench
+    unique_id: default
+    use_wandb: false
+
+  llm_model: {
+    type: gpt,  # ollama, gpt
+    model: gpt-4o-mini,  # llama3.1, gpt-4o-mini, gpt-4o
+    num_gpu: 1  # used by ollama
+  }

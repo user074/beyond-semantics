@@ -1,0 +1,14 @@
+name: eval_cv_bench_text.Eval_CV_Bench_Vicuna
+params:
+  model:
+    base: null
+    path: model/vicuna-7b-v1.5
+    name: vicuna-7b-v1.5
+
+  data:
+    directory: Data/CV-Bench
+    question_file: test.jsonl
+
+  results:
+    directory: answers/cv_bench_text
+    unique_id: default

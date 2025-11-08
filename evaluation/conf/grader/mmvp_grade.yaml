@@ -1,0 +1,18 @@
+name: grader_mmvp.Grader_MMVP
+params:
+  model:
+    name: llava-v1.5-7b     # llava-v1.5-7b
+
+  results:
+    directory: answers/mmvp
+    unique_id: default # default
+    use_wandb: false
+
+  grade_method: simple # Options: simple, llm
+
+  # If you set grade_method as llm, please uncomment and configure:
+  # llm_model: {
+  #   type: gpt,  # ollama, gpt
+  #   model: gpt-4o-mini,  # llama3.1, gpt-4o-mini, gpt-4o
+  #   num_gpu: 1  # used by ollama
+  # }

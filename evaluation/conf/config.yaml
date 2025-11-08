@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - dataset: cv_bench
+  - grader: gqa_grade
+  - override hydra/job_logging: default
+  - override hydra/hydra_logging: default
+  # - override hydra/sweeper: list
+
+
+llava_config:
+  conv_mode: llava_v1
+  temperature: 0.2
+  top_p: null
+  num_beams: 1
+  permutation: false  # true or false
+
+# hydra:
+#   mode: MULTIRUN
+#   sweeper:
+#     # standard grid search
+#     # additional list sweeper
+#     list_params:
+#       dataset.params.model.path: model/llava-v1.5-7b-multilayerNorm,model/llava-v1.5-7b-normWmean
+#       dataset.params.model.name: llava-v1.5-7b-multilayerNorm,llava-v1.5-7b-normWmean
+#       # grader.params.model.name: llava-v1.5-7b,llava-v1.5-7b-multilayerNorm,llava-v1.5-7b-normWmean
+
+

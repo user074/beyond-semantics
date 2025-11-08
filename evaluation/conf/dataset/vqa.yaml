@@ -1,0 +1,16 @@
+name: eval_vqa.Eval_VQA
+params:
+  model:
+    base: null
+    path: model/llava-v1.5-7b
+    name: llava-v1.5-7b
+
+  data:
+    directory: Data
+    image_folder: Data/vqav2/test2015
+    question_file: evaluation/data/llava_vqav2_mscoco_test2015.jsonl # llava_vqav2_mscoco_test2015.jsonl
+    test_split_file: evaluation/data/llava_vqav2_mscoco_test2015.jsonl  # Added this field
+
+  results:
+    directory: answers/vqav2
+    unique_id: default

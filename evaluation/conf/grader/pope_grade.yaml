@@ -1,0 +1,10 @@
+name: grader_pope.Grader_Pope
+params:
+  model:
+    name: llava-v1.5-7b
+  results:
+    directory: answers/pope
+    unique_id: default
+    use_wandb: false
+  strategy: popular # There are three strategies: random, popular, adversarial
+

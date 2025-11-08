@@ -1,0 +1,14 @@
+name: eval_synthetic.EvalSynthetic
+params:
+  model:
+    base: null
+    path: model/llava-v1.5-7b
+    name: llava-v1.5-7b
+
+  data:
+    directory: Data/simple-synthetic-dataset/data
+    file_path: train-00000-of-00001.parquet
+
+  results:
+    directory: answers/synthetic
+    unique_id: default

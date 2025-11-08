@@ -1,0 +1,15 @@
+name: grader_synthetic.GraderSynthetic
+params:
+  model:
+    name: llava-v1.5-7b
+  # model_name: llava-v1.5-7b-normWmean  # llava_v1.5_7b, llava-v1.5-7b-normWmean
+  results:
+    directory: answers/synthetic
+    unique_id: default   # default
+    use_wandb: false
+  # permutation: false
+  llm_model: {
+    type: gpt,  # ollama, gpt
+    model: gpt-4o-mini,  # llama3.1, gpt-4o-mini, gpt-4o
+    num_gpu: 1  # used by ollama
+  }
